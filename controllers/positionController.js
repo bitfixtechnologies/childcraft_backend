@@ -40,6 +40,37 @@ const createPosition = async (req, res) => {
   }
 };
 
+// @desc    Update a position by ID
+// @route   PUT /api/positions/:id
+// @access  Private (Admin Only)
+const updatePosition = async (req, res) => {
+  const { title, department, type, description, requirements } = req.body;
+
+  if (!title || !department || !type || !description || !requirements || !Array.isArray(requirements)) {
+    return res.status(400).json({ message: "Please provide title, department, type, description, and requirements list" });
+  }
+
+  try {
+    const position = await Position.findById(req.params.id);
+
+    if (!position) {
+      return res.status(404).json({ message: "Position not found" });
+    }
+
+    position.title = title;
+    position.department = department;
+    position.type = type;
+    position.description = description;
+    position.requirements = requirements;
+
+    const updatedPosition = await position.save();
+    res.json({ message: "Position updated successfully", position: updatedPosition });
+  } catch (error) {
+    console.error(`Error updating position ${req.params.id}:`, error);
+    res.status(500).json({ message: "Server error updating position" });
+  }
+};
+
 // @desc    Delete a position by ID
 // @route   DELETE /api/positions/:id
 // @access  Private (Admin Only)
@@ -62,5 +93,7 @@ const deletePosition = async (req, res) => {
 module.exports = {
   getPositions,
   createPosition,
+  updatePosition,
   deletePosition,
 };
+
