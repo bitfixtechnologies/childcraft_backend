@@ -183,36 +183,58 @@ const seedDatabase = async () => {
     if (positionCount === 0) {
       const defaultPositions = [
         {
-          title: "Educational Content Developer",
-          department: "Editorial & Content Development",
-          type: "Full-Time / Hybrid",
-          description: "Review and curate engaging educational content for school textbook series across CBSE, ICSE, and State boards.",
+          title: "Front Office Administrator",
+          department: "Administration & Customer Relations",
+          type: "Full-Time (In-Office)",
+          description: "Manage front office operations and provide administrative support to ensure smooth communication with schools, educators, and stakeholders.",
           requirements: [
-            "Post-graduate/graduate degree in Education, English, Mathematics, or Science.",
-            "Strong command over written English and child pedagogy.",
-            "Prior experience in textbook drafting or lesson planning is a plus."
+            "Handle calls, emails, and visitor inquiries.",
+            "Coordinate meetings, schedules, and office records.",
+            "Support administrative and customer service functions.",
+            "Maintain professional front-office operations.",
+            "Bachelor’s degree in any discipline.",
+            "Excellent communication and organisational skills.",
+            "Proficiency in MS Office and office administration.",
+            "Customer-focused with strong multitasking abilities."
           ]
         },
         {
-          title: "Graphic Designer & Children's Book Illustrator",
-          department: "Creative & Book Design",
-          type: "Full-Time (In-office)",
-          description: "Design vibrant textbook cover pages, clean multi-column text layouts, and custom illustrations geared toward young learners.",
+          title: "Business Development Officer",
+          department: "Sales & School Partnerships",
+          type: "Full-Time (Multiple Locations)",
+          description: "Drive business growth by building strong relationships with schools, educators, and academic institutions. Promote educational products, identify new opportunities, and support the expansion of our market presence.",
           requirements: [
-            "Proficiency in Adobe InDesign, Photoshop, and Illustrator.",
-            "A creative portfolio showcasing illustration skills and children's book layouts.",
-            "Excellent understanding of color psychology and print media standards."
+            "Develop and maintain relationships with schools and educational stakeholders.",
+            "Promote textbooks, learning solutions, and academic services.",
+            "Identify new business opportunities and achieve sales targets.",
+            "Conduct product presentations and school visits.",
+            "Gather market insights and customer feedback.",
+            "Bachelor’s degree in any discipline.",
+            "Strong communication, negotiation, and presentation skills.",
+            "Willingness to travel within assigned territories.",
+            "Self-motivated with a results-oriented approach.",
+            "Prior experience in educational sales or business development preferred."
           ]
         },
         {
-          title: "Academic Coordinator & Teacher Trainer",
-          department: "Academic Support Services",
-          type: "Full-Time (Requires Travel)",
-          description: "Conduct training seminars for partner schools, coordinate implementation of our digital/printed content, and collect feedback.",
+          title: "Area Sales Manager",
+          department: "Sales & Business Development",
+          type: "Full-Time (Kochi, Kerala)",
+          description: "Lead regional sales growth by developing market strategies, managing key customer relationships, and driving the adoption of our educational publishing solutions across schools and institutions.",
           requirements: [
-            "Degree in education or relevant academic field with 2+ years teaching experience.",
-            "Exceptional public speaking, presentation, and training skills.",
-            "Willingness to travel to educational institutions across states."
+            "Develop and execute sales and marketing strategies.",
+            "Lead and mentor the sales team to achieve business targets.",
+            "Identify new market opportunities and expand customer base.",
+            "Build strong relationships with schools, distributors, and stakeholders.",
+            "Monitor sales performance, forecasts, and market trends.",
+            "Support branding, promotional activities, and business development initiatives.",
+            "Bachelor's degree in Business, Marketing, or related field (MBA preferred).",
+            "5–8 years of sales and marketing experience in the Publishing or EdTech sector.",
+            "Proven track record in achieving sales targets and team management.",
+            "Strong leadership, communication, and negotiation skills.",
+            "Willingness to travel extensively within the assigned territory.",
+            "Experience in Educational Publishing or EdTech companies.",
+            "Candidates based in Kerala will be given preference."
           ]
         }
       ];
